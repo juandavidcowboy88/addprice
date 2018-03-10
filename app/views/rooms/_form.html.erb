@@ -18,10 +18,9 @@
         </div>
 
         <div class="form-group">
-          <%= f.label :price_per_night, "Número de Huéspedes" %>
-          <%= f.number_field :price_per_night, class: 'form-control input-lg' %>
+          <%= f.label :price_per_night, "precio por noche" %>
+          <%= f.number_field :price_per_night, class: 'form-control input-lg' , step: :any%>
         </div>
-
 
         <div class="form-group">
           <%= f.label :guests, "Número de Huéspedes" %>
@@ -35,7 +34,9 @@
         <div class="actions text-right">
           <%= f.submit @room.new_record? ? "Crear Habitación" : "Editar Habitación", class: "btn btn-primary btn-lg btn-block" %>
         </div>
+
       <% end %>
+
     </div>
   </div>
 </div>
